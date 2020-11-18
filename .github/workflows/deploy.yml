@@ -21,7 +21,6 @@ jobs:
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@3.7.1
         with:
-          REPOSITORY_NAME: B-A-R-team/B-A-R-team.github.io
           ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-          BRANCH: main
-          FOLDER: .next
+          BRANCH: gh-pages
+          FOLDER: out
